@@ -1,0 +1,8 @@
+#fancy-div{
+    height: 30px;
+    width: 100px;
+    background-color: coral;
+    position: absolute;
+    top:50px;
+    text-align: center;
+}
