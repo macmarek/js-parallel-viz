@@ -1,12 +1,16 @@
+function sleep(milliseconds) {
+    console.log("sleeping");
+    var start = new Date().getTime();
+    for (var i = 0; i < 1e7; i++) {
+      if ((new Date().getTime() - start) > milliseconds){
+        console.log("waking up");
+        break;
+      }
+    }
+  }
 
 function run(){
-    job();
-}
-
-function job(){
-    for(var i=0; i<10000; i++){
-        console.log(i);
-    }
+    sleep(3000);
 }
 
 function run2(){
@@ -56,4 +60,3 @@ function animate(div){
         }
     }
 }
-
